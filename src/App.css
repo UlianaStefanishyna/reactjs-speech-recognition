@@ -1,33 +1,118 @@
 .App {
-  text-align: center;
+    text-align: start;
 }
 
 .App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
+    animation: App-logo-spin infinite 20s linear;
+    height: 40vmin;
+    pointer-events: none;
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+    background-image: url("1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    /*opacity: 0.85;*/
+    /*background-color: #282c34;*/
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    font-size: calc(10px + 2vmin);
+    color: #6b44ff;
 }
 
 .App-link {
-  color: #61dafb;
+    color: #61dafb;
 }
 
 @keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.textArea {
+    width: 50%;
+    height: 56px;
+    align-items: start;
+    justify-content: start;
+    border-radius: 7px;
+    font-weight:400;
+    font-size:24px;
+    font-style: italic;
+    font-family:'Ubuntu', Helvetica, Arial, sans-serif;
+    overflow: auto;
+    top: 20px;
+    position: relative;
+    background-color: rgba(255, 255, 255, 0.6);
+    transition: 0.5s all;
+}
+
+.textArea:hover {
+    background-color: rgba(255, 255, 255, 0.45);
+    box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.05);
+}
+
+.form-style-5 {
+    position: relative;
+    display: block;
+    padding: 19px 39px 18px 39px;
+    color: #FFF;
+    margin: 0 auto;
+    background: #1abc9c;
+    font-size: 18px;
+    text-align: center;
+    font-style: normal;
+    width: 15%;
+    border: 1px solid #16a085;
+    border-width: 1px 1px 3px;
+    margin-bottom: 7px;
+}
+
+.textarea-container {
+    width: 50%;
+    height: 56px;
+    align-items: start;
+    justify-content: start;
+/*    border-radius: 7px;*/
+    font-weight:400;
+    font-size:24px;
+/*    font-style: italic;*/
+/*    font-family:'Ubuntu', Helvetica, Arial, sans-serif;*/
+/*    overflow: auto;*/
+/*    top: 20px;*/
+    position: relative;
+/*    background-color: rgba(255, 255, 255, 0.6);*/
+    transition: 0.5s all;
+}
+.textarea-container textarea {
+    width: 50%;
+    height: 56px;
+    align-items: start;
+    justify-content: start;
+    border-radius: 7px;
+    font-weight:400;
+    font-size:24px;
+    font-style: italic;
+    font-family:'Ubuntu', Helvetica, Arial, sans-serif;
+    overflow: auto;
+    top: 20px;
+    position: relative;
+    background-color: rgba(255, 255, 255, 0.6);
+    transition: 0.5s all;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+}
+.textarea-container button {
+    position: absolute;
+    top: 0;
+    color: #FFF;
+    background: #1abc9c;
+    right: 0;
 }
