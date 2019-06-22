@@ -106,6 +106,7 @@ export default class App extends React.Component {
                     <SideNav
                         onSelect={() => {
                             console.log("JJJ");
+
                             // Add your code here
                         }}>
                         <SideNav.Toggle/>
